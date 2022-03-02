@@ -16,17 +16,17 @@ Should supplement what you learnt from previous video, as well as introduce SIGU
 ## Code Implementation Breakdown 
 
 ### Server.c
-Step 1. Reset/Initialise data structure variables.
+Step 1. Reset/Initialise data structure variables. One variable will hold whole binary for one character, the other variable will count binary digits.
 
-Step 2. Produce and print Pid (Pid will be used by client)
+Step 2. Produce and print Pid (Pid will be used by client).
 
 Step 7. The signal function waits until it recieves an appropriate signal from KILL (these signals are SIGUSR1 & SIGUSR2), these signals represent 1 or 0. So using these signals in the handler function we are able to transmit binary of the character from client to server. Once we have recieved eight binary digits we can then convert them to characters that we can write onto the command line.
 
 ### Client.c
 Step 3. Check arguements from command line as client takes in pid from server and the message you want to display.
 
-Step 4. Convert Pid to int
+Step 4. Convert Pid to int.
 
 Step 5. Send the message to a function that sends each character in that message to another function that converts each character to its binary equivalent.
 
-Step 6. The function that converts to binary sends a KILL signal either to SIGNUSR1 or SIGNUSR2 depending on the binary digit
+Step 6. The function that converts to binary sends a KILL signal either to SIGNUSR1 or SIGNUSR2 depending on the binary digit. KILL also takes in Pid as a parameter, so the signal is sent to the Pid of the server.
