@@ -1,7 +1,7 @@
 # Mini_talk
 
 ## Checklist
-- Understand Pid
+- Understand Pid/Processes
 - Understand KILL
 - Understand Signal
 - Understand SIGUSR1 & SIGUSR2
@@ -12,6 +12,9 @@ Pay attention to what kill and signal do
 
 Should supplement what you learnt from previous video, as well as introduce SIGUSR1 & SIGUSR2
 - https://www.youtube.com/watch?v=PErrlOx3LYE&list=TLPQMDIwMzIwMjKHMUoSdBrXow&index=2
+
+Understanding proccesses and pid
+- https://www.youtube.com/watch?v=ss1-REMJ9GA
 
 ## Code Implementation Breakdown 
 
