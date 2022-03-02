@@ -20,10 +20,7 @@ Step 1. Reset/Initialise data structure variables.
 
 Step 2. Produce and print Pid (Pid will be used by client)
 
-Step 7. The signal function waits until it recieves an appropriate signal from KILL (these signals are SIGUSR1 & SIGUSR2), these signals
-  
-  represent 1 or 0. So using these signals in the handler function we are able to transmit binary of the character from client to server. Once we have recieved
-  eight binary digits we can then convert them to characters that we can write onto the command line.
+Step 7. The signal function waits until it recieves an appropriate signal from KILL (these signals are SIGUSR1 & SIGUSR2), these signals represent 1 or 0. So using these signals in the handler function we are able to transmit binary of the character from client to server. Once we have recieved eight binary digits we can then convert them to characters that we can write onto the command line.
 
 ### Client.c
 Step 3. Check arguements from command line as client takes in pid from server and the message you want to display.
