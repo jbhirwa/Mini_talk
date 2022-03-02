@@ -1,9 +1,9 @@
 # Mini_talk
 
 ## Checklist
-- Understand Pid (easy)
-- Understand KILL (easy)
-- Understand Signal (easy)
+- Understand Pid
+- Understand KILL
+- Understand Signal
 - Understand SIGUSR1 & SIGUSR2
 
 ## Helpful links
