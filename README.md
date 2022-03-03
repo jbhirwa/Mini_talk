@@ -5,6 +5,7 @@
 - Understand KILL
 - Understand Signal
 - Understand SIGUSR1 & SIGUSR2
+- Understand bit shifting
 
 ## Helpful links
 Pay attention to what kill and signal do
