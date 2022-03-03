@@ -16,6 +16,9 @@ Should supplement what you learnt from previous video, as well as introduce SIGU
 Understanding proccesses and pid
 - https://www.youtube.com/watch?v=ss1-REMJ9GA
 
+You don't have to watch the whole video on bit shifing
+- https://www.youtube.com/watch?v=oCBlwsY8sR4&list=TLPQMDIwMzIwMjKHMUoSdBrXow&index=4
+
 ## Code Implementation Breakdown 
 
 ### Server.c
