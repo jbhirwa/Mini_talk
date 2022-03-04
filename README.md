@@ -8,14 +8,14 @@
 - Understand bit shifting and operations
 
 ## Helpful links
+Understanding processes and pid
+- https://www.youtube.com/watch?v=ss1-REMJ9GA
+
 Pay attention to what kill and signal do
 - https://www.youtube.com/watch?v=83M5-NPDeWs&list=TLPQMDIwMzIwMjKHMUoSdBrXow&index=1
 
 Should supplement what you learnt from previous video, as well as introduce SIGUSR1 & SIGUSR2
 - https://www.youtube.com/watch?v=PErrlOx3LYE&list=TLPQMDIwMzIwMjKHMUoSdBrXow&index=2
-
-Understanding processes and pid
-- https://www.youtube.com/watch?v=ss1-REMJ9GA
 
 You don't have to watch the whole video on bit shifing
 - https://www.youtube.com/watch?v=oCBlwsY8sR4&list=TLPQMDIwMzIwMjKHMUoSdBrXow&index=4
