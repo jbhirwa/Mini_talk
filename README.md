@@ -14,7 +14,7 @@ Pay attention to what kill and signal do
 Should supplement what you learnt from previous video, as well as introduce SIGUSR1 & SIGUSR2
 - https://www.youtube.com/watch?v=PErrlOx3LYE&list=TLPQMDIwMzIwMjKHMUoSdBrXow&index=2
 
-Understanding proccesses and pid
+Understanding processes and pid
 - https://www.youtube.com/watch?v=ss1-REMJ9GA
 
 You don't have to watch the whole video on bit shifing
@@ -29,7 +29,7 @@ Step 1. Reset/Initialise data structure variables. One variable will hold whole 
 
 Step 2. Produce and print Pid (Pid will be used by client).
 
-Step 7. The signal function waits until it recieves an appropriate signal from KILL (these signals are SIGUSR1 & SIGUSR2), these signals represent 1 or 0. So using these signals in the handler function in server we are able to recieve transmitted binary of the character from client. Once we have recieved eight binary digits we can then write onto the command line.
+Step 7. The signal function waits until it recieves an appropriate signal from KILL (these signals are SIGUSR1 & SIGUSR2), these signals represent 1 or 0. So using these signals in the handler function we're able to recieve transmitted binary of the character from client. Once we have recieved eight binary digits we can then write them onto the command line.
 
 ### Client.c
 Step 3. Check arguements from command line as client takes in pid from server and the message you want to display.
