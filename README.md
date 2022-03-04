@@ -22,7 +22,6 @@ You don't have to watch the whole video on bit shifing
 
 Decent explanation of bitwise operations
 - https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/
-- 
 ## Code Implementation Breakdown 
 
 ### Server.c
