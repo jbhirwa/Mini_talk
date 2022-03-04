@@ -38,4 +38,4 @@ Step 4. Convert Pid to int.
 
 Step 5. Send the message to a function that sends each character in that message to another function that converts each character to its binary equivalent.
 
-Step 6. The function that converts to binary sends a KILL signal type of SIGNUSR1 or SIGNUSR2 depending on the binary digit. KILL also takes in Pid as a parameter, so the signal is sent to the Pid of the server.
+Step 6. The function that converts to binary sends a KILL signal of type SIGNUSR1 or SIGNUSR2 depending on the binary digit. KILL also takes in Pid as a parameter, so the signal is sent to the Pid of the server.
