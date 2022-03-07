@@ -25,7 +25,7 @@ Decent explanation of bitwise operations
 ## Code Implementation Breakdown 
 
 ### Server.c
-Step 1. Reset/Initialise data structure variables. One variable will hold whole binary for one character, the other variable will count binary digits.
+Step 1. Reset/Initialise data structure variables. One variable in the data strcuture will hold whole binary for one character, the other variable will count binary digits.
 
 Step 2. Produce and print Pid (Pid will be used by client).
 
