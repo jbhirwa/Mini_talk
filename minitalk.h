@@ -12,4 +12,10 @@ typedef struct	s_data
 	char	bin;
 }				t_data;
 
+
+int	ft_putchar(char c);
+int	ft_printf(const char *format, ...);
+int	ConvPush_num(int num);
+int	hex_num(unsigned int num, int base);
+int	is_string(char *s);
 #endif

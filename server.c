@@ -2,7 +2,7 @@
 
 t_data data;
 
-void init_data(void)
+void	reset_init(void)
 {
 	data.i = 0;
 	data.bin = 0;
@@ -10,11 +10,12 @@ void init_data(void)
 
 void	handler(int sig)
 {
+
 	if (sig == SIGUSR1)
-		sig = 1;
+		sig = 1
 	else
 		sig = 0;
-	data.bin = data.bin << 1 | sig;//adding transmitted binary digit to bin
+	data.bin = data.bin << 1 | sig;
 	data.i++;
 	if (data.i == 8)
 	{
@@ -22,15 +23,17 @@ void	handler(int sig)
 			write(1, &data.bin, 1);
 		else
 			write(1, '\n', 1);
-		init_data;
+		reset_init();
 	}
 }
 
 int main()
 {
-	init_data();
-	printf("pid: %d\n", getpid());
+	rest_init();
+	printf("Pid: %d\n", getpid());
 	signal(SIGUSR1, &handler);
 	signal(SIGUSR2, &handler);
+	while(1)
+		sleep(1);
 	return(0);
 }
