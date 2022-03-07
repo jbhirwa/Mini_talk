@@ -29,6 +29,8 @@ Step 1. Reset/Initialise data structure variables. One variable in the data strc
 
 Step 2. Produce and print Pid (Pid will be used by client).
 
+Step 3. use signal function to detect user defined signals. Use a while(1) sleep(1) to keep the program running indefinetly. 
+
 Step 7. The signal function waits until it recieves an appropriate signal from KILL (these signals are SIGUSR1 & SIGUSR2), these signals represent 1 or 0. So using these signals in the handler function we're able to recieve transmitted binary of the character from client. Once we have recieved eight binary digits we can then write them onto the command line.
 
 ### Client.c
