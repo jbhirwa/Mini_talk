@@ -8,9 +8,9 @@ void	char_to_bin(char c, pid_t pid)
 	while(i >= 0)
 	{
 		if (c >> i & 1)
-			kill(SIGUSR1, pid);
+			kill(pid, SIGUSR1);
 		else
-			kill(SIGUSR2), pid;
+			kill(pid, SIGUSR2);
 		usleep(100);
 		i--;
 	}
@@ -23,10 +23,10 @@ void	str_to_char(char *str, pid_t pid)
 	i = 0;
 	while(str[i] != '\0')
 	{
-		char_to_bin(str[1], pid);
+		char_to_bin(str[i], pid);
 		i++;
 	}
-	char_to_bin(str[1], pid);
+	char_to_bin(str[i], pid);
 }
 
 void usage(void)
@@ -42,6 +42,6 @@ int main(int argc, char **argv)
 	if (argc != 3)
 		usage();
 	msg = argv[2];
-	pid = argv[1];//ascii
+	pid = ft_atoi(argv[1]);//ascii
 	str_to_char(msg, pid);
 }
