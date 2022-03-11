@@ -24,7 +24,7 @@ https://www.youtube.com/watch?v=oCBlwsY8sR4&list=TLPQMDIwMzIwMjKHMUoSdBrXow&inde
 Decent explanation of bitwise operations
 
 https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/
-Code Implementation Breakdown
+## Code Implementation Breakdown
 
 ### Server.c
 
