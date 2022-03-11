@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   minitalk.h                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jhabaguh <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/03/09 15:39:00 by jhabaguh          #+#    #+#             */
+/*   Updated: 2022/03/09 15:39:58 by jhabaguh         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef MINITALK_H
 # define MINITALK_H
 
@@ -5,18 +17,12 @@
 # include <stdlib.h>
 # include <signal.h>
 # include <stdio.h>
+# include <stdarg.h>
+# include "libft.h"
 
-typedef struct	s_data
+typedef struct s_data
 {
 	int		i;
 	char	bin;
 }				t_data;
-
-
-int	ft_putchar(char c);
-int	ft_printf(const char *format, ...);
-int	ConvPush_num(int num);
-int	hex_num(unsigned int num, int base);
-int	is_string(char *s);
-int	ft_atoi(const char *str);
 #endif

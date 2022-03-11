@@ -1,16 +1,25 @@
 CC				= gcc
 RM				= rm -f
-CFLAGS			= -Wall -Wextra -Werror -I.
+LIBFT			= libft
+INC				= includes
+LIBS			= -L$(LIBFT) -lft -I$(LIBFT)
+HEADERS			= -I$(INC)
+CFLAGS			= -Wall -Wextra -Werror $(LIBS) $(HEADERS)
 ASAN_FLAGS		= -fsanitize=address -fno-omit-frame-pointer -Wno-format-security
 
 NAME			= server client
 
 all:
-				$(CC) $(CFLAGS) $(ASAN_FLAGS) client.c ft_atoi.c -o client
-			  	$(CC) $(CFLAGS) $(ASAN_FLAGS) server.c ft_printf.c -o server
+				@make -s -C $(LIBFT)
+				@$(CC) $(CFLAGS) $(ASAN_FLAGS) client.c -o client
+			  	@$(CC) $(CFLAGS) $(ASAN_FLAGS) server.c -o server
+				@echo Ready to go
+				@echo 
+				@echo 
 
 clean:
-				$(RM) $(NAME)
+				@make fclean -s -C $(LIBFT)
+				@$(RM) $(NAME)
+fclean: clean
 
-LEAKS = -g -fsanitize=leak
-ASAN_FLAGS = -fsanitize=address -fno-omit-frame-pointer -Wno-format-security
+re: clean all
