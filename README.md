@@ -7,6 +7,7 @@ Understand KILL
 Understand Signal
 Understand SIGUSR1 & SIGUSR2
 Understand bit shifting and operations
+
 ## Helpful links
 
 Understanding processes and pid
